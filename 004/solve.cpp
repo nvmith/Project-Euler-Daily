@@ -7,7 +7,6 @@ bool isSym(ll num)
 {
     string s = to_string(num);
     string rev(s.rbegin(), s.rend());
-    
     return s == rev;
 }
 
@@ -22,6 +21,7 @@ int main() {
         for(int j=i;j>0;j--)
         {
             ll value = 1LL*i*j;
+            if(value <= biggest) break;
             if(isSym(value))
                 biggest = max(biggest, value);
         }
