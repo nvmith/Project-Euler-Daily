@@ -13,6 +13,9 @@ bool isPrime(int n)
 
 int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
     // 1. 반복문을 이용해 매번 비교
     ll sum = 0;
     for(int i=2; i<=2000000; i++)

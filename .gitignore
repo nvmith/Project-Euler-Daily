@@ -13,3 +13,5 @@
 
 # macOS, Windows 시스템 파일
 Thumbs.db
+
+.idea/

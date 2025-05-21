@@ -29,6 +29,9 @@ int arr[1002] = {
 
 int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
     ll biggest = 0;
     
     for(int i=0;i<=987;i++)
