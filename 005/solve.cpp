@@ -22,6 +22,9 @@ map<int,int> fac(int n)
 
 int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    
     for(int i=2;i<=20;i++)
     {
         map<int, int> current = fac(i);
