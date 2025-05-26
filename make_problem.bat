@@ -4,8 +4,10 @@ chcp 65001 > nul
 set /p NUM="문제 번호 입력: "
 set /p TITLE="문제 제목 입력: "
 
-set FOLDER=%NUM%
+:: 현재 배치파일 위치를 SCRIPT_DIR에 저장
+set "SCRIPT_DIR=%~dp0"
 
+set FOLDER=%NUM%
 mkdir %FOLDER%
 cd %FOLDER%
 
@@ -24,5 +26,11 @@ echo. >> README.md
 echo - >> README.md
 echo - >> README.md
 
-echo ✅ 생성 완료!
+cd ..
+
+rem PROBLEMS.md 행 추가
+echo ^| [%NUM%](./%NUM%/README.md) ^| %TITLE% ^| (풀이 요약) ^| >> "%SCRIPT_DIR%PROBLEMS.md"
+
+echo.
+echo ✅ 생성 완료
 pause
