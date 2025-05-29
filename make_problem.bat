@@ -29,7 +29,7 @@ echo - >> README.md
 cd ..
 
 rem PROBLEMS.md 행 추가
-echo ^| [%NUM%](./%NUM%/README.md) ^| %TITLE% ^| (풀이 요약) ^| >> "%SCRIPT_DIR%PROBLEMS.md"
+echo ^| [%NUM%](./%NUM%/) ^| %TITLE% ^| (풀이 요약) ^| >> "%SCRIPT_DIR%PROBLEMS.md"
 
 echo.
 echo ✅ 생성 완료
