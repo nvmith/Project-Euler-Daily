@@ -1,4 +1,4 @@
-# 📘 Project Euler 문제 풀이 (C++)
+# 📘 Project Euler 문제 이 (C++)
 
 이 저장소는 [Project Euler](https://euler.synap.co.kr/)의 문제들을 C++로 풀이한 코드들을 모아두기 위한 공간입니다.  
 문제 해결을 통해 수학적 사고력과 알고리즘 구현 능력을 함께 기르고 있습니다.  
