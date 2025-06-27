@@ -5,23 +5,10 @@ using ll = long long;
 
 bool isPermutation(ll a, ll b)
 {
-    string sa = to_string(a);
-    string sb = to_string(b);
- 
-    if(sa.size()!=sb.size()) return false;
-    
-    int cnt[10] = {0,};
-    
-    for(int i=0;i<sa.size();i++)
-    {
-        cnt[sa[i]-'0']++;
-        cnt[sb[i]-'0']--;
-    }
-    
-    for(int i=0;i<10;i++)
-        if(cnt[i]!=0) return false;
-    
-    return true;
+    string sa = to_string(a), sb = to_string(b);
+    sort(sa.begin(), sa.end());
+    sort(sb.begin(), sb.end());
+    return sa == sb;
 }
 
 int main()
